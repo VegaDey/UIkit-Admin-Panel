@@ -1,1 +1,1 @@
-New template UIkit (Admin Panel) from FlexiCMS github.com/artemmelnik/flexicms
+New template UIkit (Admin Panel) from FlexiCMS https://github.com/artemmelnik/flexicms
