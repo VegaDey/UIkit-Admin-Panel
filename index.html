@@ -1,0 +1,115 @@
+<html lang="ru" dir="ltr">
+
+<head>
+    <title>UIkit</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+<div class="uk-offcanvas-content">
+              
+        <div>
+           <!-- Top Navigation -->
+            <div class="uk-container uk-container-expand uk-background-default" style="z-index: 980;" uk-sticky="bottom: #offset">
+                <nav class="uk-navbar uk-margin" uk-navbar >
+                  
+                   <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav">
+                   
+                   <span uk-navbar-toggle-icon></span></a>
+                   
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-toggle" href="/"><span class="uk-margin-left uk-text-lead">FlexiCMS</span></a>
+                          <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: copy"></span>Pages</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Posts</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: settings"></span>Settings</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">General</a></li>
+                                        <li><a href="#">Themes</a></li>
+                                        <li><a href="#">Menus</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: nut"></span>Plugins</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>Users</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">                            
+
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span>Exit</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+                    
+            <!-- Left Navigation -->
+            <div id="offcanvas-nav" class="" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                            
+                        </ul>
+                        
+                        </li>
+                        <li class="uk-nav-header">Header</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: copy"></span>Pages</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Posts</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: settings"></span>Settings</a>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: nut"></span>Plugins</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>Users</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span>On site</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            
+            <div class="uk-section-primary uk-flex uk-flex-middle uk-text-center" style="box-sizing: border-box; min-height: calc(100vh - 80px);">
+                <div class="uk-width-1-1">
+                    <div class="uk-container">
+                       
+                                             
+                       <span class="uk-position-bottom-right uk-position-fixed" style="margin-bottom: 10px; margin-right: 10px;"><a href="#" uk-totop uk-scroll title="Scroll UP" uk-tooltip="pos: left"></a></span>
+                       
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        Simple text. Hello my Friends! <span uk-icon="icon: happy"></span>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        
+                        
+                    
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+    
+  
+
+</div>
+
+
+
+</body>
+
+</html>
