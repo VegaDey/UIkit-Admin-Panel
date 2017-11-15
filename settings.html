@@ -1,0 +1,317 @@
+<html lang="ru" dir="ltr">
+<head>
+
+  <title>UIkit | Admin panel</title>
+
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+</head>
+<body>
+  <div class="uk-offcanvas-content">
+    <div>
+      <!-- Top Navigation -->
+      <div class="uk-container uk-container-expand uk-background-default" style="z-index: 980;" uk-sticky="bottom: #offset">
+        <nav class="uk-navbar uk-margin" uk-navbar >
+          <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" title="Open left panel" uk-tooltip="pos: bottom"><span uk-navbar-toggle-icon></span></a>
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-toggle uk-logo" href="#">
+                <img src="images/logo.png" class="uk-responsive-height" alt="FlexiCMS">
+              </a>
+              <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="#"><span class="uk-active uk-margin-small-right" uk-icon="icon: home"></span>Home</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: copy"></span>Pages</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Posts</a></li>
+                <li><a href="settings.html"><span class="uk-margin-small-right" uk-icon="icon: settings"></span>Settings</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li class="uk-active"><a href="settings.html">General</a></li>
+                      <li><a href="#">Themes</a></li>
+                      <li><a href="#">Menus</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: nut"></span>Plugins</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>Users</a></li>
+              </ul>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span>Exit</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- End Top Navigation -->
+
+        <!-- Left Navigation -->
+        <div id="offcanvas-nav" class="" uk-offcanvas="overlay: true">
+          <div class="uk-offcanvas-bar">
+            <button class="uk-alert-close uk-position-small uk-position-top-right uk-icon-button" type="button" uk-toggle="target: #offcanvas-nav"  title="Close panel" uk-tooltip="pos: right" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+              <li class="uk-heading-line uk-text-center"><h2>FlexiCMS</2></li>
+              <li><a href="#"><span class="uk-margin-small-right uk-active" uk-icon="icon: home"></span>Home</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: copy"></span>Pages</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Posts</a></li>
+              <li><a href="settings.html"><span class="uk-margin-small-right" uk-icon="icon: settings"></span>Settings</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: nut"></span>Plugins</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>Users</a></li>
+              <li class="uk-nav-divider"></li>
+              <div class="uk-position-small uk-position-bottom-cente">
+                <a href="" class="uk-icon-button" uk-icon="icon: youtube"></a>
+                <a href="" class="uk-icon-button" uk-icon="icon: twitter"></a>
+                <a href="" class="uk-icon-button" uk-icon="icon: facebook"></a>
+                <a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Left Navigation -->
+
+      <!-- Content -->
+      <div class="uk-background-primary uk-flex" style="box-sizing: border-box; min-height: calc(100vh - 80px);">
+
+          <div class="uk-container uk-width-1-1">
+            <div class="uk-hidden@m" style="margin-top: 20px;"></div>
+            <div class="uk-visible@m" style="margin-top: 20px;"></div>
+
+            <div class="uk-section uk-section-muted">
+              <div class="uk-container">
+
+                <h4><span uk-icon="icon: settings; ratio: 1"></span> Settings</h4>
+
+                <ul class="uk-tab-bottom" uk-tab uk-switcher>
+                  <li class="uk-active"><a href="#">General</a></li>
+                  <li><a href="#">Theme</a></li>
+                  <li><a href="#">Menus</a></li>
+                </ul>
+
+                <ul class="uk-switcher uk-margin">
+                  <li>
+                    <form class="uk-form-stacked">
+
+                      <div class="uk-margin">
+                        <div class="uk-margin">
+                          <label class="screen-reader-text" for="form-horizontal-text">Name site</label>
+                          <div class="uk-form-controls">
+                            <input class="uk-input" type="text" placeholder="Name site">
+                          </div>
+                        </div>
+
+                        <div class="uk-margin">
+                        <label class="screen-reader-text" for="form-horizontal-text">Description</label>
+                        <div class="uk-form-controls">
+                          <input class="uk-input" type="text" placeholder="Description">
+                        </div>
+                        </div>
+
+                        <div class="uk-margin">
+                        <label class="screen-reader-text" for="form-stacked-text">Admin E-mail</label>
+                        <div class="uk-form-controls">
+                          <input class="uk-input" type="text" placeholder="Admin E-mail">
+                        </div>
+                        </div>
+
+                        <div class="uk-margin">
+                        <label class="screen-reader-text" for="form-stacked-text">Language</label>
+                        <div class="uk-form-controls">
+                          </div>
+
+                          <select class="uk-select">
+                            <option>English</option>
+                            <option>Russian</option>
+                          </select>
+                        </div>
+                        </div>
+
+                    </form>
+                  </li>
+
+                  <li>
+                    <div class="uk-child-width-1-4@m" uk-grid>
+                      <div>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="https://getuikit.com/docs/images/dark.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Default 0.1</h3>
+                                  <p><a href="#">Artem Melnik</a></p>
+                                  <p>Description template</p>
+                                  <hr>
+                                  <button class="uk-button uk-button-default" disabled>Activated</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="https://getuikit.com/docs/images/dark.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Demo 1.0</h3>
+                                  <p><a href="#">Vega Studio</a></p>
+                                  <p>Description template</p>
+                                  <hr>
+                                  <button class="uk-button uk-button-primary">Activated</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </li>
+
+                  <li>
+                    <div class="uk-child-width-1-2@s" uk-grid>
+                      <div>
+                          <div uk-grid>
+                              <div class="uk-width-auto@m">
+                                  <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                      <li><a href="#">Header menu</a></li>
+                                      <li><a href="#">Left menu</a></li>
+                                      <li><a href="#">Footer menu</a></li>
+                                  </ul>
+                              </div>
+                              <div class="uk-width-expand@m">
+                                  <ul id="component-tab-left" class="uk-switcher uk-width-1-1">
+                                      <li>
+                                        <ul class="uk-nav uk-nav-default uk-child-width-auto" uk-sortable="cls-custom: uk-box-shadow-small uk-flex uk-flex-middle uk-background">
+                                          <li>
+                                            <form class="uk-grid-small" uk-grid>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: link"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <a style="color: #FF0000;" href="" uk-icon="icon: trash"></a>
+                                                  <span class="uk-margin-small-right" uk-icon="icon: move"></span>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </li>
+
+                                          <li>
+                                            <form class="uk-grid-small" uk-grid>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: link"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <a style="color: #FF0000;" href="" uk-icon="icon: trash"></a>
+                                                  <span class="uk-margin-small-right" uk-icon="icon: move"></span>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </li>
+
+                                          <li>
+                                            <form class="uk-grid-small" uk-grid>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: link"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <a style="color: #FF0000;" href="" uk-icon="icon: trash"></a>
+                                                  <span class="uk-margin-small-right" uk-icon="icon: move"></span>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </li>
+                                          <li>
+                                            <form class="uk-grid-small" uk-grid>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <span class="uk-form-icon" uk-icon="icon: link"></span>
+                                                  <input class="uk-input uk-form-blank uk-card-hover-small uk-box-shadow-hover-small uk-card" type="text" placeholder="Form blank">
+                                                </div>
+                                              </div>
+                                              <div class="uk-width-1-3@s">
+                                                <div class="uk-inline">
+                                                  <a style="color: #FF0000;" href="" uk-icon="icon: trash"></a>
+                                                  <span class="uk-margin-small-right" uk-icon="icon: move"></span>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="cls-custom: uk-box-shadow-small uk-flex uk-flex-middle uk-background">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="cls-custom: uk-box-shadow-small uk-flex uk-flex-middle uk-background">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+
+
+
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+      <!-- End Content -->
+
+<span class="uk-position-bottom-right uk-position-fixed" style="margin-bottom: 10px; margin-right: 10px;" uk-parallax="opacity: 0,1; y: 800,0; scale: 0.5,1; viewport: 0.5;">
+  <a class="uk-icon-button" uk-totop uk-scroll title="Scroll UP" uk-tooltip="pos: left"></a>
+</span>
+
+</body>
+</html>
